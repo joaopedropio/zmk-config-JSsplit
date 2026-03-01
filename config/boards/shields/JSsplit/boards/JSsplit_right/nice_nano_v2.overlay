@@ -48,7 +48,8 @@
 };
 
 //New Driver -- 3-1-2026
-/*&i2c0 {
+/*
+&i2c0 {
     trackball_pim447: input_device_right0: input_device_right0@A {
         status = "okay";
         compatible = "pimoroni,trackball_pim447"; //this is for new driver
@@ -68,4 +69,5 @@
         /* invert-x; */   /* Uncomment to invert X axis */
         /* invert-y; */   /* Uncomment to invert Y axis */
     };
-};*/
+};
+*/
