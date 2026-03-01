@@ -48,26 +48,24 @@
 };
 
 //New Driver -- 3-1-2026
-/*
-&i2c0 {
+/* &i2c0 {
     trackball_pim447: input_device_right0: input_device_right0@A {
         status = "okay";
         compatible = "pimoroni,trackball_pim447"; //this is for new driver
         reg = <0xA>;
         int-gpios = <&gpio1 1 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
 
-        sensitivity = <64>;  /* Range: 1-255 */
-        move-factor = <2>;   /* Range: 1-10, scales cursor movement speed */
-        scroll-factor = <1>; /* Range: 1-10, scales scrolling speed */
+        sensitivity = <64>;  // Range: 1-255
+        move-factor = <2>;   // Range: 1-10, scales cursor movement speed
+        scroll-factor = <1>; // Range: 1-10, scales scrolling speed
         
-        /* Optional LED color (RGB values 0-255) 
-        led-red = <255>;
-        led-green = <0>;
-        led-blue = <0>;*/
+        // Optional LED color (RGB values 0-255) 
+        //led-red = <255>;
+        //led-green = <0>;
+        //led-blue = <0>;
         
-        /* Optional axis inversion */
-        /* invert-x; */   /* Uncomment to invert X axis */
-        /* invert-y; */   /* Uncomment to invert Y axis */
+        // Optional axis inversion 
+        // invert-x;    // Uncomment to invert X axis 
+        // invert-y;    // Uncomment to invert Y axis 
     };
-};
-*/
+}; */
