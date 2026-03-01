@@ -6,7 +6,7 @@
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/mouse.h>
 /*#include <dt-bindings/behavior_pim447.h>*/
-
+//Need this include above for My Driver and not for New Driver (3-1-2026)
 
 #define BASE 0
 #define NUM 1
@@ -17,15 +17,19 @@
 
 / {
     
-   /*behaviors {
+   
+   // My Driver -- pre 3-1-2026
+   behaviors {
         pim447bh: pim447bh {
             compatible = "zmk,behavior-pim447";
             #binding-cells = <1>;
             
         };
         
-    };*/
+    };
 
+    /*
+    //New Driver -- 3-1-2026
     behaviors {
         tb_mode: trackball_mode {
             compatible = "zmk,behavior-trackball-mode";
@@ -38,6 +42,7 @@
             led-mode-scroll = <3>; /* Blue (LED_BLUE) */
         };
     };
+    */
 
     keymap {
         compatible = "zmk,keymap";
